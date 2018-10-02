@@ -1,0 +1,49 @@
+TP2 : Compte-rendu
+Eleve : LAGAILLARDIE Nicolas
+
+Structure M-Info : Text
+
+	lecture : cat myical_promo_gmt.2015.09.10.ics 
+
+	BEGIN : VCALENDAR -> type de fichier : calendrier
+	CALSCALE: GREGORIAN -> type de calendrier : gregorien
+	VERSION:2.0 -> version utilisee
+	X-WR-CALNAME;VALUE=TEXT:Cours Emse -> nom du calendrier
+	METHOD:PUBLISH -> methode de publication : publique, privee ou restrainte
+	X-PUBLISHED-TTL:PT120M -> heure de publication
+
+	BEGIN:VEVENT -> declaration d'un evenement, debut du noeud VEVENT
+		DTSTAMP:20160114T081500Z -> Date de creation
+		UID:action94667-1 -> ID de l'event
+		SUMMARY:Informatique / Security Trust Privacy -> titre
+		STATUS:CONFIRMED -> status
+		DTSTART:20160114T061500Z -> Date de debut
+		DTEND:20160114T093000Z -> Date de fin
+		DESCRIPTION: Intervenant :  -  -> Description de l'event
+		ORGANIZER;VALUE=TEXT: -> formatage de l'event
+		LOCATION:A1.04[Amphis] -> lieu
+		CATEGORIES:Cours 2A + 3A  -> categorie
+		URL:https://portailmetier.emse.fr/ApplisWeb/grr_ens/view_entry.php?id=94667 -> URL vers l'event
+	END:VEVENT -> fin du noeud VEVENT
+
+
+Remplacement de chaines de caracteres
+
+	BEGIN:VEVENT -> <VEVENT> puis END:VEVENT -> </VEVENT>
+
+		cat myical_promo_gmt.2015.09.10.ics | sed "s/BEGIN:VEVENT/<VEVENT>/" | sed "s/END:VEVENT/<\/VEVENT>/"
+
+	STATUS:CONFIRMED -> <STATUS>CONFRMED</STATUS>
+
+		cat myical_promo_gmt.2015.09.10.ics | sed "s/\([a-z]*[A-Z]*\):\([a-z]*[A-Z]*\)/<\1>\2<\/\1>/"
+
+
+Travail sur Calendrier Euro 2016
+
+	Certains noeud possede des characteres non compris dans l'alphabet. Certaines valeurs de noeud non conventionnelles.
+
+
+
+
+
+

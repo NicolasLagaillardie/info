@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE personne
+[
+<!ELEMENT personne (militant) >
+<!ELEMENT militant (poet) >
+<!ELEMENT poet (humanist)  >
+<!ELEMENT humanist (writer) >
+<!ELEMENT writer (novelist) >
+<!ELEMENT novelist (dramatist) >
+<!ELEMENT dramatist (prénom,nom) >
+<!ELEMENT prénom (#PCDATA) >
+<!ELEMENT nom (#PCDATA) >
+]>
+
+<personne>
+  <militant>
+    <poet>
+      <humanist>
+	<writer>
+	  <novelist>
+	    <dramatist>
+              <prénom>Victor</prénom><nom>Hugo</nom>
+            </dramatist>
+          </novelist>
+        </writer>
+      </humanist>
+    </poet>
+  </militant>
+</personne>

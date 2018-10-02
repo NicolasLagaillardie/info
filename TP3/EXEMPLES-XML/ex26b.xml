@@ -1,0 +1,7 @@
+<!DOCTYPE personne [
+<!ELEMENT personne (nom*)>
+<!ELEMENT nom (#PCDATA)>
+<!ATTLIST nom lang CDATA #IMPLIED>
+]
+>
+<personne><nom lang="fr">Nie Jun</nom><nom lang="ko">聂峻</nom></personne>

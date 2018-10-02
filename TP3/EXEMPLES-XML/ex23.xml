@@ -1,0 +1,7 @@
+<!DOCTYPE personne [
+<!ELEMENT personne (prénom, nom)>
+<!ELEMENT prénom (#PCDATA)>
+<!ELEMENT nom (#PCDATA)>
+]
+>
+<personne><prénom>Victor</prénom><nom>Hugo</nom></personne>

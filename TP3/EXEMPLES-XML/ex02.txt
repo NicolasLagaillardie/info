@@ -1,0 +1,6 @@
+<personne>Victor Hugo</personne>
+<personne>Jean-Baptiste Berré</personne>
+<personne>Chung Kook-chin</personne>
+<personne>Nie Jun</personne>
+<personne>Jun Nie</personne>
+<ville>Qing Dao</ville>

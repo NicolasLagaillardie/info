@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist SYSTEM "PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Major Version</key><integer>1</integer>
+	<key>Minor Version</key><integer>1</integer>
+	<key>Application Version</key><string>9.2.1</string>
+	<key>Features</key><integer>5</integer>
+	<key>Show Content Ratings</key><true/>
+	<key>Music Folder</key><string>file://localhost/Users/mbeig/Music/iTunes-1file/iTunes%20Media/</string>
+	<key>Library Persistent ID</key><string>A393CC560E4B32AE</string>
+	<key>Tracks</key>
+	<dict>
+		<key>43</key>
+		<dict>
+			<key>Track ID</key><integer>43</integer>
+			<key>Name</key><string>Let It Be</string>
+			<key>Artist</key><string>The Beatles</string>
+			<key>Composer</key><string>Lennon &#38; McCartney</string>
+			<key>Album</key><string>1967-1970</string>
+			<key>Genre</key><string>Rock</string>
+			<key>Kind</key><string>Fichier audio MPEG</string>
+			<key>Size</key><integer>5581368</integer>
+			<key>Total Time</key><integer>232463</integer>
+			<key>Disc Number</key><integer>2</integer>
+			<key>Disc Count</key><integer>2</integer>
+			<key>Track Number</key><integer>12</integer>
+			<key>Track Count</key><integer>14</integer>
+			<key>Year</key><integer>1970</integer>
+			<key>BPM</key><integer>192</integer>
+			<key>Date Modified</key><date>2009-06-09T14:38:22Z</date>
+			<key>Date Added</key><date>2014-12-05T08:16:42Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Sort Album</key><string>Beatles II</string>
+			<key>Sort Artist</key><string>Beatles</string>
+			<key>Persistent ID</key><string>F47DC6271BF790BF</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/mbeig/Music/iTunes-1file/iTunes%20Media/Music/The%20Beatles/1967-1970/2-12%20Let%20It%20Be.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+	</dict>
+	<key>Playlists</key>
+	<array>
+		<dict>
+			<key>Name</key><string>Beatles</string>
+			<key>Playlist ID</key><integer>158</integer>
+			<key>Playlist Persistent ID</key><string>E6B5473BC3D063F1</string>
+			<key>All Items</key><true/>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>43</integer>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

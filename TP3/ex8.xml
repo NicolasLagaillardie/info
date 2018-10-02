@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<!DOCTYPE titre
+[
+<!ELEMENT titre (paragraphe)>
+<!ELEMENT paragraphe (lien)>
+<!ATTLIST paragraphe couleur CDATA "">
+<!ELEMENT lien (#PCDATA)>
+]>
+
+<titre>
+	<paragraphe couleur="">
+		<lien/>
+	</paragraphe>
+</titre>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<personnes><!-- comm -->a_virer_personnes
+  <personne naissance="1912" mort="1954">a_virer_personne
+    <nom>a_virer_nom
+      <prénom>Alan</prénom>
+      <nom_famille>Turing</nom_famille>
+    </nom>
+    <profession>informaticien</profession>
+    <profession>mathématicien</profession>
+    <profession>cryptographe</profession>
+  </personne>
+  <personne naissance="1918" mort="1988">
+    <nom>
+      <nom_famille>Feynman</nom_famille>
+      <prénom>Richard</prénom>
+    </nom>
+    <profession>physicien</profession>
+    <loisir>bongos</loisir>
+  </personne>
+</personnes>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<!-- comm1 -->
+<!-- comm2 -->
+<a>
+  <!-- comm2 -->
+  <b/>
+  <c att="val1">un noeud texte<c>avec un sous-noeud</c></c>
+  <c att="" id="A1">un autre noeud texte</c>
+  <d>le texte du noeud de type d<c>le dernier</c></d>
+</a>

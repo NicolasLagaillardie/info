@@ -1,0 +1,39 @@
+8.1
+
+	diminution possible du nombre de balise avec <paragraphe></paragraphe> -> <paragraphe/>
+
+8.3
+
+	ex16[...] non valide : ISO-8859-1 ne contient pas d'accents, et il a été écrit en UTF-8  
+	Il faut mettre &#233; à la place de é 
+
+9.1
+
+	
+
+12.1
+
+	Possible de faire une DTD (DTD valide), mais "prénom" peut causer probleme -> changer en prenom
+
+13.1
+	
+	<!DOCTYPE iTunes
+	[
+	<!ELEMENT iTunes (chansons, listeDeLecture) >
+	<!ATTLIST iTunes version CDATA #REQUIRED >
+	<!ELEMENT chansons (chanson*) >
+	<!ELEMENT listeDeLecture (chanson*) >	
+	<!ELEMENT chanson (compositeur, interprete, titre, oeuvre, mouvement, duree, piste?, album) >
+	<!ELEMENT compositeur (#PCDATA) >
+	<!ELEMENT interprete (#PCDATA) >
+	<!ELEMENT titre (#PCDATA) >
+	<!ELEMENT oeuvre (#PCDATA) >
+	<!ELEMENT mouvement (#PCDATA) >
+	<!ELEMENT duree (#PCDATA) >
+	<!ELEMENT piste (#PCDATA) >
+	<!ELEMENT album (#PCDATA) >
+	]>
+
+14.1
+
+	DTD spécifique à iTunes en ce qu'elle fait appelle à des informations propres à la plateforme, et les noms des noeuds sont spécifiques à la plateforme. Par ailleurs, la structure même est différente de la structure naïve que nous avons élaboré à la question précédente. Néanmoins, de nombreux éléments se retrouvent dans d'autres DTD de plateforme d'écoute en ligne : date, data, string. Ainsi, d'autres plateforme pourraient utiliser cette DTD.

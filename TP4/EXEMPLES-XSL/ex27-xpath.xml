@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE a [
+<!ELEMENT a (#PCDATA|b|c|d)*>
+<!ELEMENT b (#PCDATA|b|c|d)*>
+<!ELEMENT c (#PCDATA|b|c|d)*>
+<!ELEMENT d (#PCDATA|b|c|d)*>
+<!ATTLIST c att CDATA #IMPLIED>
+<!ATTLIST c id ID #IMPLIED>
+]
+>
+<!-- comm1 -->
+<!-- comm2 -->
+<a>
+  <!-- comm2 -->
+  <b/>
+  <c att="val1">un noeud texte</c>
+  <c att="" id="A1">un autre noeud texte</c>
+  <d>le texte du noeud de type d<c/></d>
+</a>

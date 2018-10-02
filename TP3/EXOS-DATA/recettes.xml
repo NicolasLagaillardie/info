@@ -1,0 +1,1093 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE recettes SYSTEM "recettes.dtd"
+[
+<!ELEMENT recettes (recette,a*) >
+<!ELEMENT a 'EMPTY' >
+<!ELEMENT recette (titre,difficulte,ingredients,preparation?)  >
+<!ELEMENT titre (#PCDATA) >
+<!ATTLIST titre id CDATA #REQUIRED >
+<!ATTLIST titre cout CDATA #REQUIRED >
+<!ATTLIST titre categorie CDATA #IMPLIED >
+<!ELEMENT difficulte (#PCDATA) >
+<!ELEMENT ingredients (ingredient*) >
+<!ELEMENT ingredient (#PCDATA) >
+<!ELEMENT preparation (consigne*, cuisson*) >
+<!ELEMENT consigne (#PCDATA) >
+<!ELEMENT cuisson (#PCDATA) >
+]>
+
+
+<recettes> <a/>     
+
+      <recette>
+  <titre id="RF200-0000" cout="faible">
+    Recette de test
+  </titre>
+  <difficulte>Facile</difficulte>
+  <ingredients>
+    <ingredient>Carottes nouvelles <qt>800 g</qt> </ingredient>
+    <ingredient>Beurre <qt>50 g</qt></ingredient>
+    <ingredient>Persil hach&#xE9; fin <qt>1 c</qt></ingredient>
+    <ingredient>Sel</ingredient>
+    <ingredient>Poivre</ingredient>
+  </ingredients>
+</recette>
+
+<recette>
+  <titre id="RF200-153B" cout="faible">
+    Carottes au beurre
+  </titre>
+  <difficulte>Facile</difficulte>
+  <ingredients>
+    <ingredient>Carottes nouvelles <qt>800 g</qt></ingredient>
+    <ingredient>Beurre <qt>50 g</qt></ingredient>
+    <ingredient>Persil hach&#xE9; fin <qt>1 c</qt></ingredient>
+    <ingredient>Sel</ingredient>
+    <ingredient>Poivre</ingredient>
+  </ingredients>
+  <preparation>
+    <consigne>Nettoyage :
+    <duree operation="nettoyage" minutes="10"/>
+    Racler les carottes pour enlever la peau. Les laver. Les
+    laisser enti&#xE8;res si elles ne sont pas trop grosses.
+    </consigne>
+    <cuisson temperature="100">
+    Faire cuire &#xE0; l'eau sal&#xE9;e, 30 &#xE0; 35 minutes.
+    </cuisson>
+    <duree operation="cuisson" minutes="35"/>
+    <consigne>Pr&#xE9;sentation :
+    <duree operation="presentation" minutes="5"/>
+    Une fois cuites, vider l'eau, retourner les carottes avec
+    le beurre, et servir en saupoudrant de persil hach&#xE9;.
+  </consigne>
+  </preparation>
+</recette>
+
+<recette>
+  <titre id="RF200-083X" cout="faible" categorie="aux">
+    Oeufs frais
+  </titre>
+  <difficulte>Facile</difficulte>
+  <ingredients>
+    <ingredient>Oeuf <qt>1</qt></ingredient>
+  </ingredients>
+  <preparation>
+    <consigne>V&#xE9;rification de la fraicheur :
+      <duree operation="preparation" minutes="1"/> 
+      Plonger l'oeuf dans une solution d'eau sal&#xE9;e &#xE0; 10%.
+      Si l'oeuf reste au fond, il est frais.
+      S'il se redresse l&#xE9;g&#xE8;rement &#xE0; l'une de ses extr&#xE9;mit&#xE9;s,
+      il a trois &#xE0; quatre jours.
+      S'il surnage, il a plus de cinq jours.
+    </consigne>
+  </preparation>
+</recette>
+
+<recette>
+  <titre id="RF200-182A" cout="faible" categorie="aux">
+    P&#xE2;te bris&#xE9;e
+  </titre>
+  <difficulte>Facile</difficulte>
+  <ingredients>
+    <ingredient>Farine <qt>500 g</qt></ingredient>
+    <ingredient>Beurre <qt>250 g</qt></ingredient>
+    <ingredient>Oeuf <qt>0 ou 1</qt></ingredient>
+    <ingredient>Sucre <qt>0 ou 1 c</qt></ingredient>
+    <ingredient>Sel <qt>5 g</qt></ingredient>
+    <ingredient>Eau <qt>1/2 verre</qt></ingredient>
+  </ingredients>
+  <important>Ne pas mettre de sucre pour les entr&#xE9;es (quiche,
+    pizza, tarte au fromage)
+  </important>
+  <note>L'oeuf est facultatif.</note>
+  <preparation>
+    <consigne>
+      <duree operation="preparation" minutes="5"/>
+      Disposer la farine en pyramide, creuser le milieu et y verser
+      le sel, le beurre mou, le sucre et l'oeuf. P&#xE9;trir le tout en
+      versant l'eau progressivement. Arr&#xEA;ter de p&#xE9;trir d&#xE8;s que toute
+      la farine a &#xE9;t&#xE9; incorpor&#xE9;e.
+    </consigne>
+  </preparation>
+</recette>
+
+<recette>
+  <titre id="RF200-181A" cout="faible" categorie="dessert">
+    Mousse au chocolat
+  </titre>
+  <difficulte>Moyen</difficulte>
+  <ingredients> 
+    <ingredient>Barres de chocolat &#xE0; cuire <qt>4 grosses</qt></ingredient>
+    <ingredient>Oeuf <qt>4</qt></ingredient>
+  </ingredients>
+  <preparation> 
+    <consigne>
+      <duree operation="preparation" minutes="5"/>
+      Faire ramollir le chocolat au bain-marie. Le m&#xE9;langer
+      aux jaunes d'oeufs.
+    </consigne>
+    <consigne>
+      <duree operation="preparation" minutes="5"/>
+      Battre les blancs en neige tr&#xE8;s ferme.
+    </consigne>
+    <consigne>
+      <duree operation="preparation" minutes="5"/>
+      Incorporer le blanc d'oeufs et le chocolat avec d&#xE9;licatesse,
+      verser dans de petits pots ou une jatte.
+    </consigne>
+    <consigne>Pr&#xE9;sentation :
+      <duree operation="preparation" minutes="1440"/>
+      Laisser au moins 12 heures au r&#xE9;frig&#xE9;rateur.
+    </consigne>
+  </preparation>
+</recette> 
+
+<recette>
+  <titre id="RF200-180C" cout="faible" categorie="dessert">
+    Salade de fruits
+  </titre>
+  <difficulte>Facile</difficulte>
+  <ingredients>
+    <ingredient>Fruits de saison <qt>1 kg</qt></ingredient>
+    <ingredient>Vin blanc sec <qt>4 verres</qt></ingredient>
+    <ingredient>Sucre en poudre <qt>150 g</qt></ingredient>
+    <ingredient>Kirsch<qt>1/2 verre</qt></ingredient>
+  </ingredients>
+  <preparation>
+    <consigne>
+      <duree operation="preparation" minutes="10"/>
+      Prendre au moins trois vari&#xE9;t&#xE9;s de fruits frais.
+      <note>Si possible, fraises, pommes, oranges, poires,
+        bananes, p&#xEA;ches.</note>
+      Les &#xE9;plucher, les couper en quartier.
+      Les placer dans un compotier, les arroser de sucre en
+      poudre, puis verser le vin blanc et enfin le kirsh.
+      Les m&#xE9;langer avec soin.
+    </consigne>
+    <consigne>Pr&#xE9;sentation :
+      <duree operation="preparation" minutes="120"/>
+      Laisser au r&#xE9;frig&#xE9;rateur pendant 2 heures avant de servir.
+    </consigne>
+  </preparation>
+</recette>
+
+<recette>
+  <titre id="RF200-153A" cout="faible">
+    Bettes au gruyere
+  </titre>
+  <difficulte>Facile</difficulte>
+  <ingredients>
+    <ingredient>Bettes<qt>1 belle botte</qt></ingredient>
+    <ingredient>Beurre <qt>60 g</qt></ingredient>
+    <ingredient>Gruy&#xE8;re rap&#xE9; <qt>150 g</qt></ingredient>
+    <ingredient>Sel</ingredient>
+    <ingredient>Poivre</ingredient>
+  </ingredients>
+  <preparation>
+    <consigne>Nettoyage :
+      <duree operation="nettoyage" minutes="10"/>
+      Eplucher les cotes en coupant des morceaux de 3 &#xE0; 4 centimetres
+      en allant du haut de la cote vers le bas, et en tirant pour que les
+      filandres se d&#xE9;gagent et soient facilement supprim&#xE9;s.
+      Si les cotes sont trop larges, les fendre en deux.
+    </consigne>
+    <cuisson temperature="100">
+      <duree operation="cuisson" minutes="12"/>
+      Faire cuire &#xE0; l'eau sal&#xE9;e bouillante, 10 &#xE0; 12 minutes.
+    </cuisson>
+    <cuisson temperature="150">
+      <duree operation="cuisson" minutes="14"/>
+      Mettre les cotes de bette dans un plat allant au four, saupoudrer
+      de gruy&#xE8;re rap&#xE9;, poser par-dessus le beurre detaill&#xE9; en noisettes.
+      Passer au four.
+    </cuisson>
+    <consigne>Pr&#xE9;sentation :
+      <duree operation="presentation" minutes="5"/>
+      Sortir du four 5 minutes avant de servir.
+    </consigne>
+  </preparation>
+</recette>
+
+<recette>
+  <titre id="RF200-060A" cout="faible" categorie="potage">
+    Potage Saint-Germain
+  </titre>
+  <difficulte>Facile</difficulte>
+  <ingredients>
+    <ingredient>Pois cass&#xE9;s <qt>200 g</qt></ingredient>
+    <ingredient>Bouillon <qt>1,25 litres</qt></ingredient>
+    <ingredient>Jaunes d'oeufs <qt>3</qt></ingredient>
+    <ingredient>Cr&#xE8;me <qt>60 g</qt></ingredient>
+  </ingredients>
+  <preparation>
+    <cuisson temperature="90">
+      <duree operation="cuisson" minutes="60"/>
+      Faire cuire les pois cass&#xE9; dans le bouillon &#xE0; feu doux.
+    </cuisson>
+    <consigne>
+      <duree operation="preparation" minutes="5"/>
+      Une fois cuits, passer les pois au moulin &#xE0; l&#xE9;gumes
+      pour obtenir un coulis onctueux.
+      Ajouter le beurre, les oeufs et la cr&#xE8;me, fouetter le tout pour
+      bien amalgamer le tout. V&#xE9;rifier l'assaisonnement.
+    </consigne>
+    <note>On peut servir avec de petits croutons de pain
+      frits au beurre.
+    </note>
+  </preparation>
+</recette>
+
+<recette>
+  <titre id="RF200-065X" cout="faible" categorie="entree">
+    Thon &#xE0; l'huile
+  </titre>
+  <difficulte>Facile</difficulte>
+  <ingredients>
+    <ingredient>Thon &#xE0; l'huile en bo&#xEE;te <qt>1</qt></ingredient>
+  </ingredients>
+  <preparation>
+    <consigne>
+      <duree operation="preparation" minutes="2"/>
+      Ouvrir la bo&#xEE;te de thon.
+      <note>Plus facile si l'on a un ouvre-bo&#xEE;tes.</note>
+    </consigne>
+  </preparation>
+</recette>
+
+<recette>
+  <titre id="RF200-130B" cout="moyen">
+    Paupiettes de veau &#xE0; la cr&#xE8;me
+  </titre>
+  <difficulte>Moyenne</difficulte>
+  <ingredients>
+    <ingredient>Escalope de veau <qt>4</qt></ingredient>
+    <ingredient>Beurre <qt>40 g</qt></ingredient>
+    <ingredient>Chair &#xE0; saucisse <qt>120 g</qt></ingredient>
+    <ingredient>Cr&#xE8;me fraiche <qt>100 g</qt></ingredient>
+    <ingredient>Vin blanc <qt>1/2 verre</qt></ingredient>
+    <ingredient>Sel</ingredient>
+    <ingredient>Poivre</ingredient>
+  </ingredients>
+  <note>Les paupiettes sont dites aussi "Oiseaux sans t&#xEA;tes".</note>
+  <preparation>
+    <consigne>Pr&#xE9;paration des paupiettes :
+      <duree operation="preparation" minutes="10"/>
+      Poser deux noix de chair &#xE0; saucisse sur chaque escalope,
+      les rouler et les lier avec un fil.
+      <note>De la farce convient aussi &#xE0; la place de chair &#xE0; saucisse.</note>
+      <note>On trouve des paupiettes toutes faites chez le boucher.</note>
+    </consigne>
+    <cuisson temperature="180">
+      <duree operation="cuisson" minutes="18"/>
+      Chauffer le beurre &#xE0; la po&#xEA;le, et quand il est br&#xFB;lant, y placer
+      les paupiettes. Les faire dorer deux minutes sur les quatre
+      faces, puis couvrir la po&#xEA;le et r&#xE9;gler le feu sur "doux".
+      Au bout d'une dizaine de minutes, retirer le couvercle, faire
+      chauffer &#xE0; feu vif, sans br&#xFB;ler le jus, et quand celui-ci commence
+      &#xE0; prendre en caramel, le d&#xE9;glacer avec le vin blanc.
+    </cuisson>
+    <consigne>Liaison &#xE0; la cr&#xE8;me :
+      <duree operation="preparation" minutes="2"/>
+      &#xC0; feu tr&#xE8;s doux, verser la cr&#xE8;me et lier rapidement le tout.
+      Servir br&#xFB;lant.
+    </consigne>
+  </preparation>
+</recette>
+
+<recette>
+  <titre id="RF200-166B" cout="faible">
+    Frites
+  </titre>
+  <difficulte>Moyenne</difficulte>
+  <ingredients>
+    <ingredient>Pommes de terre de Hollande <qt>1 kg</qt></ingredient>
+    <ingredient>Huile <qt>2 l</qt></ingredient>
+  </ingredients>
+  <note> Pr&#xE9;voir une bassine d'une contenance de 4 litres,
+    et un panier m&#xE9;tallique pour les frites.
+  </note>
+  <important> L'huile de ma&#xEF;s donne de tr&#xE8;s bons r&#xE9;sultats !</important>
+  <preparation>
+    <consigne>Pr&#xE9;paration :
+      <duree operation="preparation" minutes="15"/>
+      Laver, &#xE9;plucher les pommes de terre, puis les d&#xE9;tailler en
+      b&#xE2;tonnets tr&#xE8;s r&#xE9;guliers de 1 cm de c&#xF4;t&#xE9; environ.
+      Les essuyer dans un linge pour enlever toute leur humidit&#xE9;.
+      Les frire dans l'huile, &#xE0; temp&#xE9;rature moyenne. Les retirer d&#xE8;s
+      qu'elles se rident, avec une couleur jaune tr&#xE8;s p&#xE2;le, et
+      les laisser se refroidir un peu.
+    </consigne>
+    <cuisson temperature="120">
+      <duree operation="cuisson" minutes="15"/>
+      Juste avant de servir, pousser la chauffe de l'huile, et d&#xE8;s que
+      celle-ci commence &#xE0; fumer, replonger le panier. Les frites
+      deviennent rapidement dor&#xE9;es et craquantes.
+      Les servir br&#xFB;lantes en saupoudrant de sel fin et en m&#xE9;langeant
+      soigneusement.
+    </cuisson>
+  </preparation>
+</recette>
+
+<recette>
+  <titre id="INET1-007D" cout="faible" categorie="dessert">
+    Tiramisu
+  </titre>
+  <difficulte>Facile</difficulte>
+  <ingredients>
+    <note>Pour 8 personnes</note>
+    <ingredient>Oeufs <qt>3, gros</qt></ingredient>
+    <ingredient>Sucre roux <qt>100 g</qt></ingredient>
+    <ingredient>Sucre vanill&#xE9;<qt>1 sachet</qt></ingredient>
+    <ingredient>Mascarpone<qt>250g</qt></ingredient>
+    <ingredient>Biscuits &#xE0; la cuill&#xE8;re<qt>24</qt></ingredient>
+    <ingredient>Caf&#xE9; noir non sucr&#xE9;<qt>1/2 litre</qt></ingredient>
+    <ingredient>poudre de cacao amer<qt>30 g</qt></ingredient>
+  </ingredients>
+  <preparation>
+    <consigne>Pr&#xE9;paration de la cr&#xE8;me :
+    <duree operation="preparation" minutes="10"/>
+    S&#xE9;parer les blancs de jaunes. M&#xE9;langer les jaunes, le
+    sucre roux et le sucre vanill&#xE9;. Rajouter au fouet le mascarpone.
+    Monter les blancs en neige, et les incorporer d&#xE9;licatement &#xE0; la
+    spatule au m&#xE9;lange pr&#xE9;c&#xE9;dent.
+    </consigne>
+    <consigne>Pr&#xE9;paration :
+    <duree operation="preparation" minutes="5"/>
+    Pr&#xE9;parer le caf&#xE9; noir.
+    Mouiller les biscuits dans le caf&#xE9;.
+    Tapisser le fond du moule avec les biscuits.
+    Recouvrir d'une couche de cr&#xE8;me, oeuf, sucre, mascapone.
+    Alterner biscuits et cr&#xE8;me. Terminer par une couche de cr&#xE8;me.
+    </consigne>
+    <consigne>Pr&#xE9;sentation :
+    <duree operation="presentation" minutes="240"/>
+    Mettre au r&#xE9;frig&#xE9;rateur 4 heures au minimum.
+  </consigne>
+  </preparation>
+</recette>
+
+
+
+<recette>
+  <titre id="RF201-017A" cout="faible">
+    Omelette
+  </titre>
+  <difficulte>Facile</difficulte>  <ingredients>
+    <note>Pour 5 personnes</note>
+    <ingredient>Oeufs <qt>10</qt></ingredient>
+    <ingredient>Beurre <qt>40 g</qt></ingredient>
+    <ingredient>du sel</ingredient>
+    <ingredient>Poivre</ingredient>
+    <ingredient>Cr&#xE8;me fraiche<qt>1 cuill&#xE8;re</qt></ingredient>
+  </ingredients>
+  <preparation>
+    <consigne>Pr&#xE9;paration :
+    <duree operation="preparation" minutes="5"/>
+        Cassez les oeufs un &#xE0; un dans un bol avant de les mettre un &#xE0; un dans une grande jatte.
+        Dans les grandes cuisisnes, on prend l'habitude de casser un &#xE0; un les oeufs
+        en pr&#xE9;vision du cas o&#xF9; un oeuf ne serait plus frais.
+        Incorporez la cr&#xE8;me fra&#xEE;che.
+        Battez l'appareil &#xE0; la fourchette sans forcer.
+        Salez et poivrez l&#xE9;g&#xE8;rement l'appareil &#xE0; omelette.
+    </consigne>
+    <cuisson>
+      <duree operation="cuisson" minutes="5-6"/>
+      Chauffez un plat de service au four.
+        Faites chauffer le beurre dans une po&#xEA;le anti-adh&#xE9;sive.
+        Versez les oeufs dans la po&#xEA;le et mettez &#xE0; feu moyen.
+        M&#xE9;langez l&#xE9;g&#xE8;rement avec une cuill&#xE8;re en bois.
+        Quand les oeufs du bord commencent &#xE0; prendre, ramenez-les vers le centre.
+    </cuisson>
+
+  </preparation>
+</recette>
+
+
+<recette>
+  <titre id="RF200-104C" cout="faible">    Pates nature
+  </titre>
+  <difficulte>Tres Facile</difficulte>
+  <ingredients>
+    <ingredient>Eau<qt>1 L</qt></ingredient>
+    <ingredient>Pates <qt>150 g</qt></ingredient>
+    <ingredient>Sel <qt>10 g</qt></ingredient>
+  </ingredients>
+  <preparation>
+    <consigne>Nettoyage :
+    <duree operation="nettoyage" minutes="3"/>
+    Laver la casserole, son assiette et ses couverts.
+    </consigne>
+    <cuisson temperature="100">
+    Faire bouillir l'eau et rajouter du sel
+    </cuisson>
+    <duree operation="cuisson" minutes="10"/>
+    <consigne>Pr&#xE9;sentation :
+    <duree operation="presentation" minutes="30 s"/>
+    Une fois cuites, &#xE9;goutter les pates. Les mettre dans votre assiette propre,
+    rajouter une pincee de sel et manger avec vos couverts propres.
+  </consigne>
+  </preparation>
+</recette>
+
+
+<recette>
+  <titre id="RF200-154B" cout="faible" categorie="dessert">
+    Poire belle h&#xE9;l&#xE8;ne
+  </titre>
+  <difficulte>Facile</difficulte>
+  <ingredients>
+    <ingredient>Poires au sirop <qt>800 g</qt></ingredient>
+    <ingredient>Chocolat noir <qt>100 g</qt></ingredient>
+    <ingredient>Glace vanille <qt>4 boules</qt></ingredient>
+    <ingredient>Amandes grillees<qt>1 poigne</qt></ingredient>
+  </ingredients>
+  <preparation>
+    <consigne>Egoutage :
+    <duree operation="preparation" minutes="2"/>
+    Ouvrir la boite de poires au sirop, &#xE0; l'aide d'un ouvre-boite (recommand&#xE9;)
+    et &#xE9;gouter afin d'&#xE9;vacuer tout le sirop.
+    </consigne>
+    <cuisson temperature="80">
+    Faire fondre le chocolat avec un peu d'eau au bain marie
+    (le micro-onde peut faire l'affaire).
+    </cuisson>
+    <duree operation="cuisson" minutes="10"/>
+    <consigne>Pr&#xE9;sentation :
+    <duree operation="presentation" minutes="10"/>
+    D&#xE9;poser les poires sur une assiette ou dans une grande coupe (froide),
+    deposer ensuite vos boules de glaces, puis verser votre chocolat fondu
+    au-dessus du tout, enfin ajouter une petite poingn&#xE9; d'amande grill&#xE9;es
+    pour finir la d&#xE9;coration.
+  </consigne>
+  </preparation>
+</recette>
+
+
+<recette>
+  <titre id="RF200-553B" categorie="dessert" cout="faible">
+    Cr&#xEA;pes
+  </titre>
+  <difficulte>Facile</difficulte>
+  <ingredients>
+    <ingredient>lait<qt>0.5 litres</qt></ingredient>
+    <ingredient>Farine<qt>250 g</qt></ingredient>
+    <ingredient>oeufs<qt>3</qt></ingredient>
+    <ingredient>sucre vanill&#xE9;<qt>1 sachet</qt><note>seulement pour des cr&#xEA;pes sucr&#xE9;es</note></ingredient>
+  </ingredients>
+  <preparation>
+  <consigne>Pr&#xE9;paration de la p&#xE2;te
+  <duree operation="preparation" minutes="10"/>
+  Mettre la farine dans un recipient, ajouter les oeufs et le sucre puis m&#xE9;langer
+  &#xE0; l'aide d'un batteur &#xE9;lectrique ou bien un fouet. Une fois que la p&#xE2;te devient
+  homog&#xE8;ne ajouter petit &#xE0; petit le lait, ceci afin d'&#xE9;viter l'apparition de grumeaux.
+  Une fois que tout le lait &#xE0; &#xE9;t&#xE9; ajout&#xE9; la pr&#xE9;paration est termin&#xE9;e.
+  </consigne>
+  <cuisson>
+  <duree operation="cuisson" minutes="30"/>
+  Utiliser soit une po&#xEA;le avec un rev&#xEA;tement en teflon soit une po&#xEA;le "traditionnelle"
+  l&#xE9;g&#xE8;rement huil&#xE9;e. Faire chauffer la po&#xEA;le. Puis prendre les 3/4 d'une louche de p&#xE2;te
+  et la d&#xE9;poser dans la po&#xEA;le. Attendre que la cr&#xEA;pe ne colle plus &#xE0; la po&#xEA;le
+  (utiliser une spatule pour l'aider &#xE0; se d&#xE9;coller) puis la retourner. V&#xE9;rifier &#xE0;
+  l'aide de la spatule que le dessous de la cr&#xEA;pe est cuit, puis l'enlever de la po&#xEA;le.
+  Enfin il suffit de recommencer l'op&#xE9;ration jusqu'&#xE0; qu'il n'y ait plus de p&#xE2;te.
+  </cuisson>
+  </preparation>
+</recette>
+
+
+<recette>
+  <titre id="RF200-181C" cout="faible" categorie="dessert">
+    Gratin de pommes
+  </titre>
+  <difficulte>Moyenne</difficulte>
+  <ingredients>
+  <note> Pour 6 personnes </note>
+    <ingredient>Pommes reinettes <qt>6</qt></ingredient>
+    <ingredient>Beurre ramolli <qt>150 g</qt></ingredient>
+    <ingredient>Sucre en poudre <qt>150 g</qt></ingredient>
+    <ingredient>Amandes en poudre<qt>150 g</qt></ingredient>
+    <ingredient>Oeufs<qt>3</qt></ingredient>
+    <ingredient>Amandes effil&#xE9;es<qt>75 g</qt></ingredient>
+    <ingredient>Cr&#xE8;me<qt>20 cl</qt></ingredient>
+  </ingredients>
+  <preparation>
+  <consigne>Nettoyage :
+      <duree operation="nettoyage" minutes="5"/>
+      Peler les pommes,couper les en deux,&#xE9;vider-les et d&#xE9;poser
+      les face plate dans le plat.
+    </consigne>
+    <consigne>Pr&#xE9;paration de la cr&#xE8;me d'amande.
+     <duree operation="preparation" minutes="10"/>
+      travailler le beurre &#xE0; la fourchette de fa&#xE7;on &#xE0; obtenir une pommade.
+      Ajouter le sucre,les amandes en poudre.M&#xE9;langer au fouet, puis
+      incorporer les oeufs un &#xE0; un.Tout en fouettant,ajouter la cr&#xE8;me.
+      Verser la cr&#xE8;me sur les pommes.
+   </consigne>
+   <cuisson temperature="210">
+   <duree operation="cuisson" minutes="15"/>
+   Mettre le plat au four pour 15 minutes.
+   </cuisson>
+    <consigne>Pr&#xE9;paration des amandes &#xE9;ffil&#xE9;es.
+     <duree operation="preparation" minutes="2"/>
+      Faire dorer les amandes &#xE9;ffil&#xE9;es &#xE0; sec dans une po&#xEA;le antiah&#xE9;sif,
+      en remuant.
+   </consigne>
+    <consigne>Pr&#xE9;sentation :
+      <duree operation="preparation" minutes="5"/>
+      Parsemer le gratin des amandes bien dor&#xE9;es et saupoudrerl&#xE9;g&#xE8;rement
+      de sucre glace avant de servir ti&#xE8;de.
+    </consigne>
+  </preparation>
+</recette>
+
+
+<recette>
+  <titre id="INET1-007" cout="faible">
+    Yahourt sucr&#xE9;
+  </titre>
+  <difficulte>Facile</difficulte>
+  <ingredients>
+    <note>Pour 1 personne</note>
+    <ingredient>Yahourt <qt>1</qt></ingredient>
+    <ingredient>Sucre <qt>10 g</qt></ingredient>
+  </ingredients>
+  <preparation>
+    <consigne>Pr&#xE9;paration :
+    <duree operation="preparation" minutes="1"/>
+    Ouvrir le pot de yahourt. Verser le sucre dans
+    le yahourt. A l'aide d'une cuillere, remuer
+    &#xE9;nergiquement.
+  </consigne>
+  </preparation>
+</recette>
+
+
+<recette>
+  <titre id="RF200-132K" cout="faible" categorie="dessert">
+    P&#xEA;che melba
+  </titre>
+  <difficulte>Facile</difficulte>
+  <ingredients>
+    <ingredient>Glace &#xE0; la vanille</ingredient>
+ <ingredient>cr&#xE8;me chantilly</ingredient>
+ <ingredient>demi-p&#xEA;che au sirop <qt>2</qt></ingredient>
+  </ingredients>
+  <preparation>
+   Garnissez le fond d'une coupe individuelle avec une bonne cuiller&#xE9;e
+   &#xE0; soupe de glace &#xE0; la vanille. Posez dessus les demi-p&#xEA;ches et garnissez
+   le tout de cr&#xEA;me chantilly.
+  </preparation>
+</recette>
+
+
+<recette>
+  <titre id="RF201-080P" cout="faible">
+    Gateau de Laurent
+  </titre>
+  <difficulte>Facile</difficulte>
+  <ingredients>
+  <ingredient>oeufs<qt>2</qt></ingredient>
+  <ingredient>Farine<qt>250 g</qt></ingredient>
+  <ingredient>Beurre mou<qt>125 g</qt></ingredient>
+  <ingredient>Sel<qt>1 pinc&#xE9;e</qt></ingredient>
+  <ingredient>Sucre semoule<qt>200 g</qt></ingredient>
+  <ingredient>Sucre vanille<qt>1 sachet</qt></ingredient>
+  <ingredient>Levure chimique<qt>1 sachet</qt></ingredient>
+  <ingredient>Lait ti&#xE8;de<qt>1.5 dl</qt></ingredient>
+  </ingredients>
+  <preparation>
+
+    <consigne>Pr&#xE9;parer le moule :
+    <duree operation="preparation" minutes="1"/>
+    Beurrer un moule de 22 cm de diam&#xE8;tre. M&#xE9;langer la levure avec la farine et tamiser l'ensemble.
+    </consigne>
+    <consigne>Faire une fontaine :
+    <duree operation="preparation" minutes="5"/>
+    Faire un creux au centre. Casser les oeufs, ajouter le sucre, la vanille,
+    le reste du beurre et enfin le lait.
+
+    </consigne>
+    <consigne>Melanger :
+    <duree operation="preparation" minutes="5"/>
+    M&#xE9;langer avec une spatule. La p&#xE2;te doit &#xEA;tre lisse mais ne pas trop la travailler.
+    </consigne>
+
+    <cuisson temperature="200">
+    Verser la p&#xE2;te dans un moule. Cuire au four 40 minutes.
+    </cuisson>
+    <duree operation="cuisson" minutes="40"/>
+
+
+    <consigne>V&#xE9;rifier la cuisson :
+    <duree operation="preparation" minutes="1"/>
+    Planter la pointe d'un couteau au centre du g&#xE2;teau, si elle ressort s&#xEA;che le g&#xE2;teau est pr&#xEA;t
+    </consigne>.
+
+    <consigne>Pr&#xE9;sentation :
+    <duree operation="presentation" minutes="2"/>
+    D&#xE9;mouler le g&#xE2;teau 5 minutes apr&#xE8;s sa sortie du four et laisser refroidir sur une grille
+    ou sur une plaque ou bien un plat.
+  </consigne>
+  </preparation>
+</recette>
+
+
+<recette>
+  <titre id="INET1-008D" cout="faible" categorie="dessert">
+    Brownies
+  </titre>
+  <difficulte>Facile</difficulte>
+  <ingredients>
+    <note>Pour 6 a 8 personnes</note>
+    <ingredient>Oeufs <qt>2</qt></ingredient>
+    <ingredient>Sucre <qt>100 g</qt></ingredient>
+    <ingredient>Farine <qt>70 g</qt></ingredient>
+    <ingredient>Beurre ramolli<qt>130 g</qt></ingredient>
+    <ingredient>Chocolat a dessert fondu<qt>70 g</qt></ingredient>
+    <ingredient>Fruits secs (noix, pistaches, et noix de pecan)<qt>60 g</qt></ingredient>
+  </ingredients>
+  <preparation>
+    <consigne>Pr&#xE9;paration :
+    <duree operation="preparation" minutes="10 &#xE0; 15"/>
+    Battre le beurre mou au fouet, puis ajouter le chocolat fondu,
+    mais pas trop chaud. Bien m&#xE9;langer.
+    Ajouter les oeufs, le sucre, bien m&#xE9;langer et, en dernier,
+    la farine. Bien m&#xE9;langer l'ensemble avant d'y verser les fruits secs.
+    </consigne>
+    <cuisson temperature="180">
+      <duree operation="cuisson" minutes="20 &#xE0; 30"/>
+      Etaler la pr&#xE9;paration dans un plat allant au four beurr&#xE9;
+      (l'id&#xE9;al est d'utiliser un moule rectangulaire) et mettre au
+      four &#xE0; 180&#xB0; (th. 6) pendant 20 &#xE0; 30 minutes (le centre du g&#xE2;teau
+      doit &#xEA;tre &#xE0; peine cuit).
+    </cuisson>
+    <consigne>Pr&#xE9;sentation :
+    <duree operation="presentation" minutes="120"/>
+    Laisser refroidir, puis d&#xE9;couper en morceaux carr&#xE9;s (par exemple 2 cm
+    par 2 cm).
+    Servir ces brownies nature ou accompagn&#xE9;s de la glace vanille.
+  </consigne>
+  </preparation>
+</recette>
+
+
+<recette>
+  <titre id="RF200-74HS" cout="faible" categorie="plat-principal">
+    Tartiflette
+  </titre>
+  <difficulte>Facile</difficulte>
+  <ingredients>
+    <note>Pour 4 personnes</note>
+    <ingredient>Pomme de terre a chair ferme <qt>1,2 kilo</qt></ingredient>
+    <ingredient>Lardons <qt>200 g</qt></ingredient>
+    <ingredient>Oignon <qt>1 piece</qt></ingredient>
+    <ingredient>Reblochon fermier <qt>1 entier</qt></ingredient>
+    <ingredient>Creme fraiche <qt>2 cuill&#xE8;res a soupe</qt></ingredient>
+  </ingredients>
+  <preparation>
+    <consigne>Cuire les pommes de terre &#xE9;pluch&#xE9;es &#xE0; l'anglaise
+    <duree operation="preparation" minutes="20"/>
+    Au terme de la cuisson, les &#xE9;gouter et les coupers en tranches &#xE9;paisses.
+    </consigne>
+    <consigne>Pr&#xE9;paration :
+    <duree operation="preparation" minutes="20"/>
+    Faire suer les oignons &#xE9;minc&#xE9;s &#xE0; la poele jusqu'&#xE0; ce qu'ils deviennent translucides.
+         Faire cuire l&#xE8;g&#xE8;rement les lardons.
+         Recouvrir le fond du plat &#xE0;gratin beur&#xE9; avec les tranches de pomme de terre puis les oignons puis les lardons.
+         Alterner une couche de pomme de terre et une couche oignon et lardons.
+         Terminer par une couche de pomme de terre.
+         Ajouter la creme fraiche.
+         Recouvrir du reblochon coup&#xE9; et deux dans le sens de l'&#xE9;paisseur.
+         <note>La croute de chaque tranche de reblochon doit etre dipos&#xE9;e sur le dessus.</note>
+    </consigne>
+         <cuisson temperature="180">
+      <duree operation="cuisson" minutes="30"/>
+      Passer le tout au four pr&#xE9;chauff&#xE9;.
+      Faire cuire jusqu'&#xE0; ce que le reblochon soit l&#xE9;g&#xE8;rement fondu et gratin&#xE9;.
+    </cuisson>
+  </preparation>
+</recette>
+
+<recette>
+  <titre id="Ma-RECETTE" cout="faible" categorie="plat-principal">
+    Tartiflette
+  </titre>
+  <difficulte>Facile</difficulte>
+  <ingredients>
+    <note>Pour 4 personnes</note>
+    <ingredient>pommes de terre <qt>1 kg</qt></ingredient>    <ingredient>lardons <qt>200 g</qt></ingredient>
+    <ingredient>reblochon<qt>1 </qt></ingredient>
+    <ingredient>huile<qt>2 c a soupe</qt></ingredient>
+    <ingredient>ail</ingredient>
+    <ingredient>sel</ingredient>
+    <ingredient>poivre</ingredient>
+  </ingredients>
+  <preparation>
+   <consigne>Epluchage :
+
+        Eplucher les pommes de terre, les couper, bien les rincer,
+            et les essuyer dans un torchon propre.
+    </consigne>
+    <consigne>
+        Faire chauffer l'huile dans une po&#xEA;le, pour y faire fondre
+     les oignons; rajouter ensuite les pommes de terre.
+    </consigne>
+    <consigne>
+        Faire dorer tous les c&#xF4;t&#xE9;s des d&#xE9;s de pommes de terre,
+         rajouter les lardons, et finir de cuire.
+  </consigne>
+    <consigne>
+        D'autre part, gratter la cro&#xFB;te du reblochon et le couper
+      en deux (ou en quatre). Pr&#xE9;parer un plat &#xE0; gratin en frottant
+  le fond et les bords avec de l'ail.
+  </consigne>
+    <consigne>
+        Pr&#xE9;chauffer le four
+  </consigne>
+    <consigne>
+        Dans le plat &#xE0; gratin, verser une couche de pommes de terre
+    aux lardons, disposer dessus la moiti&#xE9; du reblochon, puis de
+   nouveau des pommes de terre
+  </consigne>
+    <consigne>
+        Terminer avec le reste du reblochon (cro&#xFB;te vers les pommes
+    de terre), et enfourner.
+  </consigne>
+        <cuisson temperature="200">
+                <duree operation="cuisson" minutes="20"/>
+        </cuisson>
+<note>
+        Bien surveiller, pour &#xE9;viter que le fromage ne rende trop de gras.
+</note>
+  </preparation>
+</recette>
+
+
+<recette>
+  <titre id="INET1-777D" cout="faible" categorie="plat-principal">
+    Omelette &#xE0; la courgette
+  </titre>
+  <difficulte>Facile</difficulte>
+  <ingredients>
+    <note>Pour 2 personnes</note>
+    <ingredient>Oeufs <qt>4, gros</qt></ingredient>
+    <ingredient>Courgette <qt>1, grosse</qt> <note>pas cher</note></ingredient>
+         <ingredient>Lait <qt>1/2 verre</qt></ingredient>
+         <ingredient>Sel <qt>1 cuill&#xE8;re</qt></ingredient>
+         <ingredient>Poivre <qt>1 cuill&#xE8;re</qt></ingredient>
+         <ingredient>Huile pour cuisson<qt>1 cuill&#xE8;re</qt></ingredient>
+  </ingredients>
+  <preparation>
+    <consigne>Pr&#xE9;paration des courgettes :
+    <duree operation="preparation" minutes="5"/>
+         Couper la courgette en rondelles les faire frire et les &#xE9;gouter, r&#xE9;server.
+    </consigne>
+
+
+    <consigne>Pr&#xE9;paration des oeufs :
+    <duree operation="preparation" minutes="5"/>
+         Battre les oeufs avec le sel et le poivre, ajouter le lait.
+    </consigne>
+    <consigne>Pr&#xE9;paration :
+    <duree operation="preparation" minutes="8"/>
+         Verser le melange oeufs lait dans la po&#xEA;le l&#xE9;g&#xE8;rement huil&#xE9;e
+         mais bien chaude, r&#xE9;partir rapidement les courgettes dessus.
+    </consigne>
+  </preparation>
+  <note>
+                Bon appetit
+  </note>
+</recette>
+
+
+<recette>
+  <titre id="RF200-152B" cout="faible">
+    M&#xE9;lange de l&#xE9;gumes
+  </titre>
+  <difficulte>Facile</difficulte>
+  <ingredients>
+    <ingredient>Courgettes <qt>2 pi&#xE8;ces</qt></ingredient>
+    <ingredient>Lardons <qt>200 g</qt></ingredient>
+    <ingredient>Oignon <qt>1 pi&#xE8;ce</qt></ingredient>
+    <ingredient>Poivron <qt>1 pi&#xE8;ce</qt></ingredient>
+    <ingredient>Sel</ingredient>
+    <ingredient>Poivre</ingredient>
+    <ingredient>Herbes de Provence</ingredient>
+  </ingredients>
+  <preparation>
+    <consigne>Pr&#xE9;paration :
+    <duree operation="preparation" minutes="10"/>
+    D&#xE9;couper les poivrons en petits d&#xE9;s et les courgettes et oignons
+    en fines lamelles.
+    </consigne>
+    <cuisson temperature="100">
+    Faire revenir les oignons, lardons et poivrons ensemble, puis ajouter
+    les courgettes avant de laisser cuire couvert environ 25 minutes.
+    </cuisson>
+    <duree operation="cuisson" minutes="35"/>
+    <consigne>Pr&#xE9;sentation :
+    <duree operation="presentation" minutes="2"/>
+    Salez, poivrez, ajoutez quelques herbes de Provence pour les amateurs
+    et servez bien chaud !
+  </consigne>
+  </preparation>
+</recette>
+
+
+<recette>
+  <titre id="RF200-152D" cout="faible">
+    Couscous
+  </titre>
+  <difficulte>Facile</difficulte>
+  <ingredients>
+    <ingredient>couscous moyen<qt>2 kg</qt></ingredient>
+    <ingredient>navets <qt>1 kg</qt></ingredient>
+    <ingredient>chou pomm&#xE9; <qt>1 c</qt></ingredient>
+    <ingredient>Sel</ingredient>
+    <ingredient>Poivre</ingredient>
+  </ingredients>
+  <preparation>
+    <consigne>Nettoyage :
+    <duree operation="nettoyage" minutes="10"/>
+    Racler les navets pour enlever la peau. Les laver. Les
+    laisser entiers s'ils ne sont pas trop gros.
+    </consigne>
+    <cuisson temperature="100">
+    Faire cuire &#xE0; l'eau sal&#xE9;e, 30 &#xE0; 35 minutes.
+    </cuisson>
+    <duree operation="cuisson" minutes="35"/>
+    <consigne>Pr&#xE9;sentation :
+    <duree operation="presentation" minutes="5"/>
+    <duree operation="presentation" minutes="5"/>
+    Une fois cuits, vider l'eau, retourner les navets avec
+    le beurre, et servir en saupoudrant de persil hach&#xE9;.
+  </consigne>
+  </preparation>
+</recette>
+
+
+<recette>
+        <titre id="recette-Lauriane" cout="faible" categorie="dessert">
+    Tarte au chocolat
+        </titre>
+        <difficulte>Facile</difficulte>
+        <ingredients>
+                <ingredient>Oeufs <qt>2</qt></ingredient>
+                <ingredient>Chocolat <qt>200 g</qt></ingredient>
+                <ingredient>Cr&#xE8;me liquide <qt>20 cl</qt></ingredient>
+                <ingredient>Lait <qt>8 cl</qt></ingredient>
+                <ingredient>Farine <qt>200 g</qt></ingredient>
+                <ingredient>Sucre <qt>40 g</qt></ingredient>
+                <ingredient>Beurre <qt>100 g</qt></ingredient>
+        </ingredients>
+        <preparation>
+                <consigne>
+                        Pr&#xE9;paration de la pate :
+                        <duree operation="preparation" minutes="5"/>
+                        M&#xE9;langer le beurre fondu, le sucre, la
+                        farine et un oeuf. Etaler la pate.
+
+                </consigne>
+                <cuisson temperature="180">
+                        <duree operation="cuisson" minutes="10"/>
+                        Faites cuire la pate &#xE9;tal&#xE9;e 10 minutes
+                        &#xE0; 180 degr&#xE9;s.
+                </cuisson>
+                <consigne>
+                        Preparation du chocolat :
+                        <duree operation="preparation" minutes="10"/>
+                        Pendant ce temps, faire fondre le chocolat avec
+                        la cr&#xE8;me et le lait. Laisser refroidir puis
+                        ajouter l'oeuf battu.
+                </consigne>
+                <consigne>
+                        Quand la pate est cuite, verser la pr&#xE9;paration au chocolat dessus et faire cuire.
+                </consigne>
+                <cuisson temperature="180">
+                        <duree operation="cuisson" minutes="10"/>
+                        Faire cuire la pate 10 minutes &#xE0; 180 degr&#xE9;s. Une fois sortie du four, on peut rajouter des noix ou des noisettes par dessus.
+                </cuisson>
+        </preparation>
+</recette>
+
+
+<recette>
+        <titre id="RF201-123A" cout="moyen" categorie="plat-principal">
+    Maki
+        </titre>
+        <difficulte>Moyen</difficulte>
+  <ingredients>
+                <note> Japonais </note>
+        <note>souspartie : makis</note>
+    <ingredient>Algues grill&#xE9;es <qt>10</qt></ingredient>
+        <note>vous trouverez sans probl&#xE8;me cet ingr&#xE9;dient dans des magazins asiatiques</note>
+    <ingredient>radis jaune  <qt>1</qt></ingredient>
+    <ingredient>Concombre <qt>1</qt></ingredient>
+    <ingredient>saumon fum&#xE9; ou de thon tr&#xE8;s frais<qt>150 g</qt></ingredient>
+    <ingredient>riz blanc parfum&#xE9; <qt>230 g</qt></ingredient>
+    <ingredient>eau <qt> 500 cl</qt></ingredient>
+    <ingredient>Wasabi</ingredient>
+  
+ 
+             <note>souspartie : onigir</note>
+        <ingredient>riz blanc parfum&#xE9;  <qt>230 g</qt></ingredient>
+        <ingredient>eau <qt>500 cl</qt></ingredient>
+        <ingredient>oignon  <qt>1/2</qt></ingredient>
+        <ingredient>saumon fum&#xE9; ou crevettes <qt>75 g</qt></ingredient>
+        <ingredient>graines de s&#xE9;same  <qt>2 cuill&#xE8;res &#xE0; soupe</qt></ingredient>
+        <ingredient>vinaigre balsamique <qt>2 cuill&#xE8;res &#xE0; caf&#xE9;</qt></ingredient>
+
+
+             <note>souspartie : sauce</note>
+        <ingredient>gingembre  <qt>1 petit morceau</qt></ingredient>
+        <ingredient>sucre  <qt>3 cuill&#xE8;res &#xE0; caf&#xE9; </qt></ingredient>
+        <ingredient>sauce soja (ou sauce Tamari)  <qt>5 cuill&#xE8;res &#xE0; soupe </qt></ingredient>
+  </ingredients>
+  <preparation>
+        <note>souspartie : makis</note>
+    <cuisson>
+              <note>moyen=autocuiseur</note>
+      Riz :
+      <duree operation="cuisson" minutes="10"/>
+        Faire chauffer les 230 g de riz avec 50 cl d'eau dans un autocuiseur. Si vous ne poss&#xE9;dez pas d'autocuiseur
+      <note>vous pouvez les faire chauffer dans une casserole,</note>
+    </cuisson>
+    <consigne>
+        En attendant que le riz refroidisse, coupez le poisson en fines lamelles de 1,5 cm.
+        D&#xE9;coupez le concombre &#xE9;pluch&#xE9; et le radis jaune en fines tranches d'une longueur de 12cm environ.
+    </consigne>
+    <consigne>
+        Mettez une algue sur une surface plane. Etalez le riz froid sur la moiti&#xE9; de l'algue tout en laissant une bordure de 1cm tout autour.
+        D&#xE9;posez le long d'un c&#xF4;t&#xE9; enti&#xE8;rement recouvert de riz une tranche de poisson, de concombre et de radis jaune.
+    </consigne>
+    <note>Si vous aimez la saveur piment&#xE9;e, vous pouvez mettre une pointe de wasabi.</note>
+    <consigne>Roulez la feuille d'algue tr&#xE8;s serr&#xE9;e en l'enroulant autour des ingr&#xE9;dients. R&#xE9;servez.
+    </consigne>
+  </preparation>
+  <preparation>
+             <note>souspartie : onigir</note>
+    <cuisson>
+              <note>moyen=autocuiseur</note>
+        Chauffez les 230g de riz restant avec 50 cl d'eau de la m&#xEA;me fa&#xE7;on que la premi&#xE8;re cuisson.
+    </cuisson>
+    <consigne>
+      En attendant, hachez l'oignon ou l'&#xE9;chalote. Hachez le poisson ou les crevettes. M&#xE9;langez ces ingr&#xE9;dients au s&#xE9;same et au vinaigre.
+    </consigne>
+    <consigne>
+        Formez de petites boulettes de riz avec vos mains humidifi&#xE9;es (essentiel pour que le riz ne colle pas et ne se disperse pas).
+        Incorporez au centre un peu de farce.
+    </consigne>
+  </preparation>
+  <preparation>
+             <note>souspartie : sauce</note>
+    <consigne>
+        Hachez le petit morceau de gingembre et m&#xE9;langez-le &#xE0; la sauce soja avec le sucre.
+    </consigne>
+    <consigne>
+        Formez de petites boulettes de riz avec vos mains humidifi&#xE9;es (essentiel pour que le riz ne colle pas et ne se disperse pas).
+        Incorporez au centre un peu de farce.
+    </consigne>
+  </preparation>
+  <preparation>
+  <consigne>
+        D&#xE9;coupez les makis avec un couteau <important>tr&#xE8;s bien aiguis&#xE9;</important> (un maki a une longueur 3 cm &#xE0; peu pr&#xE8;s).
+        Pr&#xE9;sentez les makis et les boulettes de riz sur des assiettes accompagn&#xE9;s de la sauce.
+  </consigne>
+  </preparation>
+
+</recette>
+
+<recette>
+  <titre id="RF800-0000" cout="faible" categorie="dessert">
+    Pommes au four
+  </titre>
+  <difficulte>Facile</difficulte>
+  <ingredients>
+    <ingredient>Pommes <qt>5 pc</qt></ingredient>
+    <ingredient>Sucre <qt>150 g</qt></ingredient>
+  </ingredients>
+  <preparation>
+        <consigne>Nettoyage:
+              <duree operation="preparation" minutes="5"/>
+              Nettoyer les pommes
+        </consigne>
+        <cuisson temperature="180">
+              <duree operation="cuisson" minutes="25"/>
+              Ajouter sucre et placer dans four, pendant 20-25 minutes.
+        </cuisson>
+  </preparation>
+</recette>
+
+
+<recette>
+  <titre id="CHARLES_PICHERY_RECETTE_1" cout="faible" categorie="plat-principal">
+    Curry de poulet
+  </titre>
+  <difficulte>Facile</difficulte>
+  <ingredients>
+    <note>Pour 2 personnes</note>
+    <ingredient>Pommes de terre <qt>2, gros</qt></ingredient>
+    <ingredient>Carottes <qt>3</qt></ingredient>
+    <ingredient>Courgette<qt>3</qt></ingredient>
+    <ingredient>Poulet<qt>300 grammes</qt></ingredient>
+    <ingredient>Oignons<qt>3,gros</qt></ingredient>
+    <ingredient>Gousses d'ail<qt>2</qt></ingredient>
+    <ingredient>Poudre de Curry<qt>2 cuillers &#xE0; soupe</qt></ingredient>
+    <ingredient>Sel</ingredient>
+    <ingredient>Poivre</ingredient>
+    <ingredient>Huile</ingredient>
+    <ingredient>Eau</ingredient>
+  </ingredients>
+  <preparation>
+    <consigne>Blanchir les oignons avec l'ail:
+        <duree operation="cuisson" minutes="5"/>
+        Faire blanchir les oignons dans l'huile chaude avec l'ail jusqu'&#xE0; qu'ils soient translucides
+    </consigne>
+    <consigne>Rajouter la poudre de curry:
+        <note>Attendre que la pr&#xE9;paration ait un aspect "sec"</note>
+    </consigne>
+    <consigne>Rajouter les pommes de terre, le poulet et les carottes:
+        <note>Les carottes, le poulet et pommes de terre doivent &#xEA;tre pr&#xE9;alablement coup&#xE9;s en cubes</note>
+        Remuer jusqu'&#xE0; ce que les l&#xE9;gumes et le poulet soient couverts de curry
+    </consigne>
+    <consigne>Rajouter les courgettes
+        <note>les courgettes doivent &#xEA;tre pel&#xE9;es puis coup&#xE9;es en fines lamelles</note>
+    </consigne>
+    <consigne>Rajouter l'eau:
+        Jusqu'&#xE0; recouvrir tous les ingr&#xE9;dients
+    </consigne>
+    <consigne>Saler, poivrer :
+        une fois que la pr&#xE9;paration a fini de cuire
+    </consigne>
+  </preparation>
+</recette>
+
+<recette>
+  <titre id="RF222-2222" cout="faible">
+    Bayd o mat&#xE9;cha
+  </titre>
+  <difficulte>Facile</difficulte>
+  <ingredients>
+    <ingredient>Oeuf</ingredient>
+    <ingredient>Tomates</ingredient>
+    <ingredient>Huile </ingredient>
+    <ingredient>Sel</ingredient>
+    <ingredient>Poivre</ingredient>
+  </ingredients>
+  <note>Recette la plus pratiqu&#xE9;e au Maroc</note>
+
+  <preparation>
+    <cuisson temperature="100">
+    Faire cuire les oeufs et les tomates avec l'huile d'olive en meme temps.
+    </cuisson>
+    <duree operation="cuisson" minutes="5"/>
+    <consigne>Pr&#xE9;sentation :
+    <duree operation="presentation" minutes="1"/>
+    Une fois cuites, vous mettez &#xE7;a dans une assiete et voila bon appetit!!!
+  </consigne>
+  </preparation>
+</recette>
+
+
+</recettes>
