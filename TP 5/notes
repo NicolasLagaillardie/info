@@ -1,0 +1,17 @@
+connection bridged
+
+ifconfig -> ip adresse
+netstat -an -t -> port tcp
+
+enable writing/auth
+
+telnet [adresse] ->
+	mdp / pwd
+
+ftp [adresse] ->
+	mdp / pwd
+
+ssh root@10.103.2.166 ->
+	mdp / pwd
+
+crash w/ too big name -> limit size of name
