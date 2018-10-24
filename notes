@@ -1,0 +1,2 @@
+hexa
+	echo -n "Hello" | od -A n -t x1
