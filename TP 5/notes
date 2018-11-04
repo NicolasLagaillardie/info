@@ -13,5 +13,49 @@ ftp [adresse] ->
 
 ssh root@10.103.2.166 ->
 	mdp / pwd
+2->
 
 crash w/ too big name -> limit size of name
+
+change the code with a size limit for the input
+
+3->
+
+Write a cgi script
+
+#!/bin/bash
+echo "Content-type: text/html"
+echo ""
+echo "<html><head><title>Bash as CGI"
+echo "</title></head><body>"
+
+echo "<h1>General system information for host $(hostname -s)</h1>"
+echo ""
+
+echo "<h1>Memory Info</h1>"
+echo "<pre> $(free -m) </pre>"
+
+echo "<h1>Disk Info:</h1>"
+echo "<pre> $(df -h) </pre>"
+
+echo "<h1>Logged in user</h1>"
+echo "<pre> $(w) </pre>"
+
+echo "<center>Information generated on $(date)</center>"
+echo "</body></html>"
+
+echo Bonjour $FORM_civilite $FORM_prenom $FORM_nom <!-- affichage de la civilité, du prenom et du nom de la personne -->
+
+cat << EOF
+</h2>
+</center>
+<hr>
+</body>
+</html>
+EOF
+
+Disable CGI module in Apache : $ a2dismod cgi
+
+4->
+
+<script>alert(document.cookie)</script>
