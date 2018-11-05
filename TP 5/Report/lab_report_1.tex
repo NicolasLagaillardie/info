@@ -54,7 +54,7 @@
 %	DOCUMENT INFORMATION
 %----------------------------------------------------------------------------------------
 
-\title{Majeure info \\ TP - Sécurité Lab} % Title
+\title{Majeure info \\ TP - S\'{e}curit\'{e} Lab} % Title
 
 \author{Nicolas \textsc{Lagaillardie}} % Author name
 
@@ -87,7 +87,7 @@
 
 \section{Objectif}
 
-Le but du TP est de tester la sécurité d'un serveur et d'exploiter ses différentes failles de sécurité. Nous utilisons pour cela une machine virutlle qui héberge OpenSuse 11.2, et nous attaquerons le serveur depuis cette machine.
+Le but du TP est de tester la s\'{e}curit\'{e} d'un serveur et d'exploiter ses diff\'{e}rentes failles de s\'{e}curit\'{e}. Nous utilisons pour cela une machine virutlle qui h\'{e}berge OpenSuse 11.2, et nous attaquerons le serveur depuis cette machine.
  
 %----------------------------------------------------------------------------------------
 %	SECTION 2
@@ -96,7 +96,7 @@ Le but du TP est de tester la sécurité d'un serveur et d'exploiter ses différ
 \section{Analyse du traffic internet}
 
 \paragraph{}
-Voici les différentes commandes utilisées pour établir des connexions entre notre PC et la machine virtuelle \\*
+Voici les diff\'{e}rentes commandes utilis\'{e}es pour \'{e}tablir des connexions entre notre PC et la machine virtuelle \\*
 \begin{tcolorbox}
 \begin{lstlisting}[language=sh]
 $ ifconfig
@@ -116,7 +116,7 @@ $ ssh [user]@[adresse ip]
 \end{tcolorbox}
 ~\\*
 \paragraph{}
-Dans l'ordre, ces commandes permmettent de récupérer l'adresse ip de la machine courante, de récupérer le port TCP, et d'établir des une connections \textit{telnet} / \textit{FTP} / \textit{SSH} avec l'autre machine.
+Dans l'ordre, ces commandes permmettent de r\'{e}cup\'{e}rer l'adresse ip de la machine courante, de r\'{e}cup\'{e}rer le port TCP, et d'\'{e}tablir des une connections \textit{telnet} / \textit{FTP} / \textit{SSH} avec l'autre machine.
 
 \paragraph{}
 \textbf{Telnet} permet d'envoyer et recevoir des lignes de texte avec la machine distante. \\*
@@ -127,10 +127,10 @@ Dans l'ordre, ces commandes permmettent de récupérer l'adresse ip de la machin
 %	SECTION 3
 %----------------------------------------------------------------------------------------
 
-\section{Sécurité de l'application}
+\section{S\'{e}curit\'{e} de l'application}
 
 \paragraph{}
-Après avoir démarré le serveur depuis notre machine, nous accédons à l'adresse \textbf{localhost:8080} sur la machine distante. Cela signifie que le port 8080 est maintenant occupé et indisponible pour tout autre type de connection. Voic une capture d'écran de ce que nous obtenons
+Apr\`{e}s avoir d\'{e}marr\'{e} le serveur depuis notre machine, nous acc\'{e}dons \`{a} l'adresse \textbf{localhost:8080} sur la machine distante. Cela signifie que le port 8080 est maintenant occup\'{e} et indisponible pour tout autre type de connection. Voic une capture d'\'{e}cran de ce que nous obtenons :
 \\*
 \begin{figure}[h]
 \begin{center}
@@ -146,15 +146,15 @@ Après avoir démarré le serveur depuis notre machine, nous accédons à l'adre
 \section{Deny of service et buffer overflow}
 
 \paragraph{}
-Une première attaque consiste à envoyer un nom bien trop lourd pour pouvoir être traité correctement par le serveur. Cela résulte tout simplement en un crash du serveur, que l'on doit alors redémarrer. \\*
-Une solution pour prévenir cette attaque est de limiter la taille de l'input. \\*
-Une autre attaque consiste à simuler un très grand nombre de connections simultanées au serveur, un DDOS. Je n'ai pas pu le faire sur ma propre machine puisque c'est elle-même qui s'attaque (en terme d'hardware). Mais avec au moins deux machines distinctes, c'est possible. Dans ce cas, le serveur prend énormément de temps pour répondre à une requête voir refuse toute requête et crash. Il n'existe pas de véritable solution à ce problème, et une alternative consiste à refuser des requêtes provenant de ces requêtes intempestives.
+Une premi\`{e}re attaque consiste \`{a} envoyer un nom bien trop lourd pour pouvoir \^{e}tre trait\'{e} correctement par le serveur. Cela r\'{e}sulte tout simplement en un crash du serveur, que l'on doit alors red\'{e}marrer. \\*
+Une solution pour pr\'{e}venir cette attaque est de limiter la taille maximale de l'input et refuser l'input si la taille est trop importante. \\*
+Une autre attaque consiste \`{a} simuler un tr\`{e}s grand nombre de connections simultan\'{e}es au serveur, un DDOS. Je n'ai pas pu le faire sur ma propre machine puisque c'est elle-m\^{e}me qui s'attaque (en terme d'hardware). Mais avec au moins deux machines distinctes, c'est possible. Dans ce cas, le serveur prend \'{e}norm\'{e}ment de temps pour r\'{e}pondre \`{a} une requ\^{e}te voir refuse toute requ\^{e}te et crash. Il n'existe pas de v\'{e}ritable solution \`{a} ce probl\`{e}me, et une alternative consiste \`{a} refuser des requ\^{e}tes provenant de ces requ\^{e}tes intempestives.
 
 %----------------------------------------------------------------------------------------
 %	SECTION 5
 %----------------------------------------------------------------------------------------
 
-\section{Exécution de commande à distance}
+\section{Ex\'{e}cution de commande \`{a} distance}
 
 \paragraph{}
 EN m'inspirant du code index.pl, voici un code un script bash qui demande quelques informations sur l'utilisateur et qui renvoie un \textbf{Bonjour [utilisateur]} ainsi que d'autres informations sur la machine de l'utilisateur. \\*
@@ -181,7 +181,7 @@ echo "<pre> $(w) </pre>"
 echo "<center>Information generated on $(date)</center>"
 echo "</body></html>"
 
-echo Bonjour $FORM_civilite $FORM_prenom $FORM_nom <!-- affichage de la civilité, du prenom et du nom de la personne -->
+echo Bonjour $FORM_civilite $FORM_prenom $FORM_nom <!-- affichage de la civilit\'{e}, du prenom et du nom de la personne -->
 
 cat << EOF
 </h2>
@@ -194,7 +194,7 @@ EOF
 \end{tcolorbox}
 ~\\*
 \paragraph{}
-Pour corriger ce "défaut", il faut désactiver les scripts CGI sur le serveur, ce qui peut se faire à l'aide de cette commande.\\*
+Pour corriger ce "d\'{e}faut", il faut d\'{e}sactiver les scripts CGI sur le serveur, ce qui peut se faire \`{a} l'aide de cette commande.\\*
 \begin{tcolorbox}
 \begin{lstlisting}[language=sh]
 $ a2dismod cgi
@@ -208,7 +208,7 @@ $ a2dismod cgi
 \section{Cross site scripting}
 
 \paragraph{}
-Pour exploiter des failles concernant les messages d'erreur renvoyés par le serveur, nous avons injecté du code Javascript directement dans l'input. Le code suivant permet par exemple de connaître directement la valeur des cookies de la session actuelle.\\*
+Pour exploiter des failles concernant les messages d'erreur renvoy\'{e}s par le serveur, nous avons inject\'{e} du code Javascript directement dans l'input. Le code suivant permet par exemple de connaître directement la valeur des cookies de la session actuelle.\\*
 \begin{tcolorbox}
 \begin{lstlisting}[language=html]
 <script>
