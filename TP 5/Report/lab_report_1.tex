@@ -56,7 +56,7 @@
 
 \title{Majeure info \\ TP - S\'{e}curit\'{e} Lab} % Title
 
-\author{Nicolas \textsc{Lagaillardie}} % Author name
+\author{Nicolas \textsc{Lagaillardie} \\ Paul \textsc{Breugnot}} % Author name
 
 \date{\today} % Date for the report
 
@@ -87,7 +87,7 @@
 
 \section{Objectif}
 
-Le but du TP est de tester la s\'{e}curit\'{e} d'un serveur et d'exploiter ses diff\'{e}rentes failles de s\'{e}curit\'{e}. Nous utilisons pour cela une machine virutlle qui h\'{e}berge OpenSuse 11.2, et nous attaquerons le serveur depuis cette machine.
+Le but du TP est de tester la s\'{e}curit\'{e} d'un serveur et d'exploiter ses diff\'{e}rentes failles de s\'{e}curit\'{e}. Nous utilisons pour cela une machine virtuelle qui h\'{e}berge OpenSuse 11.2, et nous attaquerons le serveur depuis cette machine.
  
 %----------------------------------------------------------------------------------------
 %	SECTION 2
@@ -116,12 +116,12 @@ $ ssh [user]@[adresse ip]
 \end{tcolorbox}
 ~\\*
 \paragraph{}
-Dans l'ordre, ces commandes permmettent de r\'{e}cup\'{e}rer l'adresse ip de la machine courante, de r\'{e}cup\'{e}rer le port TCP, et d'\'{e}tablir des une connections \textit{telnet} / \textit{FTP} / \textit{SSH} avec l'autre machine.
+Dans l'ordre, ces commandes permettent de r\'{e}cup\'{e}rer l'adresse ip de la machine courante, de r\'{e}cup\'{e}rer le port TCP, et d'\'{e}tablir des des connections \textit{telnet} / \textit{FTP} / \textit{SSH} avec l'autre machine.
 
 \paragraph{}
 \textbf{Telnet} permet d'envoyer et recevoir des lignes de texte avec la machine distante. \\*
 \textbf{FTP} permet d'envoyer et recevoir des fichiers. \\*
-\textbf{SSH} permet d'ouvrir un terminal sur la machine distante, et donc d'en prendre le contrôle.
+\textbf{SSH} permet d'ouvrir un terminal sur la machine distante, et donc d'en prendre le contr\^{o}le.
  
 %----------------------------------------------------------------------------------------
 %	SECTION 3
@@ -148,7 +148,7 @@ Apr\`{e}s avoir d\'{e}marr\'{e} le serveur depuis notre machine, nous acc\'{e}do
 \paragraph{}
 Une premi\`{e}re attaque consiste \`{a} envoyer un nom bien trop lourd pour pouvoir \^{e}tre trait\'{e} correctement par le serveur. Cela r\'{e}sulte tout simplement en un crash du serveur, que l'on doit alors red\'{e}marrer. \\*
 Une solution pour pr\'{e}venir cette attaque est de limiter la taille maximale de l'input et refuser l'input si la taille est trop importante. \\*
-Une autre attaque consiste \`{a} simuler un tr\`{e}s grand nombre de connections simultan\'{e}es au serveur, un DDOS. Je n'ai pas pu le faire sur ma propre machine puisque c'est elle-m\^{e}me qui s'attaque (en terme d'hardware). Mais avec au moins deux machines distinctes, c'est possible. Dans ce cas, le serveur prend \'{e}norm\'{e}ment de temps pour r\'{e}pondre \`{a} une requ\^{e}te voir refuse toute requ\^{e}te et crash. Il n'existe pas de v\'{e}ritable solution \`{a} ce probl\`{e}me, et une alternative consiste \`{a} refuser des requ\^{e}tes provenant de ces requ\^{e}tes intempestives.
+Une autre attaque consiste \`{a} simuler un tr\`{e}s grand nombre de connections simultan\'{e}es au serveur, un DDOS. Nous n'avons pas pu le faire sur nos propres machines puisque c'est elle-m\^{e}me qui s'attaque (en terme d'hardware). Mais avec au moins deux machines distinctes, c'est possible. Dans ce cas, le serveur prend \'{e}norm\'{e}ment de temps pour r\'{e}pondre \`{a} une requ\^{e}te voir refuse toute requ\^{e}te et crash. Il n'existe pas de v\'{e}ritable solution \`{a} ce probl\`{e}me, et une alternative consiste \`{a} refuser des requ\^{e}tes provenant de ces requ\^{e}tes intempestives.
 
 %----------------------------------------------------------------------------------------
 %	SECTION 5
@@ -157,7 +157,7 @@ Une autre attaque consiste \`{a} simuler un tr\`{e}s grand nombre de connections
 \section{Ex\'{e}cution de commande \`{a} distance}
 
 \paragraph{}
-EN m'inspirant du code index.pl, voici un code un script bash qui demande quelques informations sur l'utilisateur et qui renvoie un \textbf{Bonjour [utilisateur]} ainsi que d'autres informations sur la machine de l'utilisateur. \\*
+En m'inspirant du code index.pl, voici un code un script bash qui demande quelques informations sur l'utilisateur et qui renvoie un \textbf{Bonjour [utilisateur]} ainsi que d'autres informations sur la machine de l'utilisateur. \\*
 \begin{tcolorbox}
 \begin{lstlisting}[language=sh]
 #!/bin/bash
